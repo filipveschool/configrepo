@@ -1,5 +1,6 @@
 example.organization.property: "I AM THE DEFAULT AUTHENTICATIOn SERVICE"
 example.property: "I AM THE DEFAULT VERSION"
+
 spring:
   jpa:
     show-sql: true
@@ -17,6 +18,7 @@ spring:
     url: "jdbc:mysql://localhost:3306/db_example?useSSL=false"
     username: root
     password: secret
+    initialization-mode: always
 
 redis:
   server: "redis"
