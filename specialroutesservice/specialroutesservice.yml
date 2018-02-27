@@ -2,10 +2,9 @@ tracer.property: "I AM THE DEFAULT VERSION"
 example.property: "I AM THE DEFAULT VERSION"
 spring:
   jpa:
-    #databaseplatform: org.hibernate.dialect.H2Dialect
-    showsql: true
+    show-sql: true
     hibernate:
-      ddlauto: update
+      ddl-auto: update
     properties:
       hibernate:
         show_sql: true
@@ -13,9 +12,14 @@ spring:
         format_sql: true
         dialect: "org.hibernate.dialect.MySQL5Dialect"
   datasource:
-    #platform: "mysql"
+    platform: "mysql"
     url: "jdbc:mysql://localhost:3306/db_example?useSSL=false"
-    username: "root"
-    password: "secret"
-  database:
-    #driverClassName: "org.h2.Driver"
+    username: root
+    password: secret
+
+redis:
+  server: "redis"
+  port: "6379"
+
+signing:
+  key: "345345fsdfsf5345"
