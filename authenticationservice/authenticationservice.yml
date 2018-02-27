@@ -3,7 +3,7 @@ example.property: "I AM THE DEFAULT VERSION"
 spring:
   jpa:
     show-sql: true
-    hibernate:
+    #hibernate:
       #ddl-auto: update
     properties:
       hibernate:
