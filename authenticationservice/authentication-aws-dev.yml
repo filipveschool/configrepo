@@ -1,11 +1,23 @@
-#spring.jpa.database: "POSTGRESQL"
-#spring.datasource.platform:  "postgres"
-spring.jpa.show-sql: "true"
-#spring.database.driverClassName: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:mysql://localhost:3306/db_example?useSSL=false"
-spring.datasource.username: "root"
-spring.datasource.password: "secret"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.MySQL5Dialect"
-signing.key: "345345fsdfsf5345"
+example.organization.property: "I AM THE DEFAULT AUTHENTICATIOn SERVICE"
+example.property: "I AM THE DEFAULT VERSION"
+spring:
+  jpa:
+    showsql: true
+    hibernate:
+      ddlauto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+        dialect: "org.hibernate.dialect.MySQL5Dialect"
+  datasource:
+    #platform: "mysql"
+    url: "jdbc:mysql://localhost:3306/db_example?useSSL=false"
+    username: "root"
+    password: "secret"
+redis:
+  server: "redis"
+  port: "6379"
+signing:
+  key: "345345fsdfsf5345"s
